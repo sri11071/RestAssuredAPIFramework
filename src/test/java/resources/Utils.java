@@ -21,13 +21,11 @@ public class Utils {
 
 	public static RequestSpecification req;
 	static String projectPath = System.getProperty("user.dir") + File.separator;
-	static String filePath = projectPath + "src" + File.separator + "test" + File.separator + "java" + File.separator
-			+ "resources" + File.separator;
 
 	public RequestSpecification requestSpecification() throws IOException {
 
 		if (req == null) {
-			PrintStream log = new PrintStream(new FileOutputStream(filePath+"logging.txt"));
+			PrintStream log = new PrintStream(new FileOutputStream(projectPath + "logging.txt"));
 			req = new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl")).addQueryParam("key", "qaclick123")
 					.addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
@@ -38,7 +36,8 @@ public class Utils {
 	}
 
 	public static String getGlobalValue(String key) throws IOException {
-	
+		String filePath = projectPath + "src" + File.separator + "test" + File.separator + "java" + File.separator
+				+ "resources" + File.separator;
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(filePath + "global.properties");
 		prop.load(fis);
