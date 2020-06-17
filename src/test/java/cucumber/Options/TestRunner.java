@@ -1,12 +1,11 @@
-package cucumber.Options;
+package cucumber.options;
 
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-
-@CucumberOptions(features = "src/test/java/features", glue = "stepDefinations")
 @RunWith(Cucumber.class)
+@CucumberOptions(features="src/test/java/features",plugin ="json:target/jsonReports/cucumber-report.json",glue= {"stepDefinations"})
 public class TestRunner {
-
+//tags= {"@DeletePlace"}  compile test verify
 }
