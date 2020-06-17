@@ -1,4 +1,4 @@
-package cucumber.options;
+package cucumber.Options;
 
 import org.junit.runner.RunWith;
 
