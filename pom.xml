@@ -155,20 +155,20 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>6.1.0</version>
+			<version>4.8.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>6.1.0</version>
+			<version>4.8.0</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-core</artifactId>
-			<version>6.1.0</version>
+			<version>4.8.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
 		<dependency>
@@ -210,6 +210,6 @@
 			</plugin>
 		</plugins>
 	</reporting>
-		
-	
+
+
 </project>
