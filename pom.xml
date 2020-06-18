@@ -155,20 +155,29 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>4.8.0</version>
+			<version>6.1.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>4.8.0</version>
+			<version>6.1.0</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-core</artifactId>
-			<version>4.8.0</version>
+			<version>6.1.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
 		<dependency>
@@ -184,32 +193,7 @@
 			<version>4.3.0</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjrt</artifactId>
-			<version>1.9.5</version>
-		</dependency>
 
-
-		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-testng</artifactId>
-			<version>2.13.3</version>
-		</dependency>
 	</dependencies>
-
-	<reporting>
-		<excludeDefaults>true</excludeDefaults>
-		<plugins>
-			<plugin>
-				<groupId>io.qameta.allure</groupId>
-				<artifactId>allure-maven</artifactId>
-				<version>2.9</version>
-			</plugin>
-		</plugins>
-	</reporting>
-
 
 </project>
